@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой проект | Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Логотип проекта">
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="team.html">Команда</a></li>
+                    <li><a href="journal.html">Журнал</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Название вашего проекта</h1>
+            <p>Краткое описание проекта в одном предложении</p>
+            <a href="about.html" class="btn">Узнать больше</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Основные особенности</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Инновационность</h3>
+                    <p>Опишите инновационные аспекты вашего проекта</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Технологии</h3>
+                    <p>Какие технологии используются в проекте</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Результаты</h3>
+                    <p>Каких результатов планируется достичь</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>О проекте</h2>
+                    <p>Краткое описание проекта. Здесь вы можете разместить основную информацию о вашем проекте, его целях и задачах.</p>
+                    <p>Этот текст вы замените на актуальное описание вашего проекта.</p>
+                    <a href="about.html" class="btn">Подробнее</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/500x300" alt="Проект">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Проектная деятельность</h3>
+                    <p>Сайт создан в рамках дисциплины "Проектная деятельность"</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <p>Email: project@example.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Мой проект. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Мобильное меню
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
