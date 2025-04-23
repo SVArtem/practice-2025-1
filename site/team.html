@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команда CTF | Наша команда</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .team-section {
+            padding: 100px 0 80px;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .team-member {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+        .member-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Логотип CTF">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html#features">Особенности</a></li>
+                    <li class="active"><a href="team.html">Команда</a></li>
+                    <li><a href="journal.html">Журнал</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="team-section">
+        <div class="container">
+            <h2>Наша команда</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Артем Щербина</h3>
+                    <p></p>
+                    <div class="social-links">
+                        <a href="https://github.com/SVArtem"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Чернышев Георгий</h3>
+                    <p></p>
+                </div>
+                <div class="team-member">
+                    <div class="member-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Новиков Артем</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Проектная деятельность</h3>
+                    <p>Сайт создан в рамках дисциплины "Проектная деятельность"</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <p>Email: artem.schcerbina@mail.ru</p>
+                    <div class="social-links">
+                        <a href="https://github.com/SVArtem"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Команда CTF.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+        
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('nav ul').classList.remove('show');
+            });
+        });
+    </script>
+</body>
+</html>

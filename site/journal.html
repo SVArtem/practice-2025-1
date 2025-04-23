@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команда CTF | Журнал</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .journal-section {
+            padding: 100px 0 80px;
+        }
+        .journal-posts {
+            max-width: 800px;
+            margin: 40px auto 0;
+        }
+        .post {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+        }
+        .post-date {
+            color: var(--gray);
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Логотип CTF">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html#features">Особенности</a></li>
+                    <li><a href="team.html">Команда</a></li>
+                    <li class="active"><a href="journal.html">Журнал</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="journal-section">
+        <div class="container">
+            <h2>Журнал проекта</h2>
+            <div class="journal-posts">
+                <div class="post">
+                    <div class="post-date">23 апреля 2025</div>
+                    <h3>Тренинг</h3>
+                    <p>Сегодня мы участвовали в тренинге команды, в ходе которого было выполнено несколько задач, таких как стеганография, работа с чат-ботом, создание скрипта.</p>
+                </div>
+                <div class="post">
+                    <div class="post-date">3 апреля 2025</div>
+                    <h3>Тренинг</h3>
+                    <p>Был првоеден тренинг с разборами заданий прошедшего хакатона.</p>
+                </div>
+                <div class="post">
+                    <div class="post-date">2 апреля 2025</div>
+                    <h3>Участие в хакатоне</h3>
+                    <p>Команда участвовала на хакатоне "Breach CTF 2025".</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Проектная деятельность</h3>
+                    <p>Сайт создан в рамках дисциплины "Проектная деятельность"</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <p>Email: artem.schcerbina@mail.ru</p>
+                    <div class="social-links">
+                        <a href="https://github.com/SVArtem"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Команда CTF.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+        
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('nav ul').classList.remove('show');
+            });
+        });
+    </script>
+</body>
+</html>
